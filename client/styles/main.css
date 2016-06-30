@@ -66,12 +66,13 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 36px;
   line-height: 44px;
-  margin: 15px;
+  margin: 30px;
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 30px;
   line-height: 44px;
+  margin: 40px 0 20px;
 }
 
 .hero {
@@ -80,16 +81,26 @@ h2 {
   margin: auto;
 }
 
-.hero-text a {
-  border-bottom: 2px solid #821122;
-  color: #E0E7E9;
-  text-decoration: none;
+.hero-text p {
+  font-size: 20px;
+  line-height: 1.5em;
 }
 
-.hero-text a:hover {
-  border-bottom: none;
+.hero-title {
+  padding-bottom: 20px;
+  position: relative;
 }
 
+.hero-title:after {
+  background-color: #F13535;
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 50%;
+  margin-left: -40px;
+  position: absolute;
+  width: 80px;
+}
 /*
   =========================================================
   Links
@@ -97,10 +108,16 @@ h2 {
 */
 
 a {
+  color: #F13535;
+  cursor: pointer;
 	text-decoration: none;
 	-webkit-transition: all .3s;
 	-moz-transition:	all .3s;
 	transition:			all .3s;
+}
+
+a:hover {
+  color: #666666;
 }
 
 .links {
@@ -149,7 +166,7 @@ a {
 }
 
 .circle:hover {
-  color: #821122;
+  color: #F13535;
 }
 
 .circle:hover:after {
@@ -164,7 +181,7 @@ a {
 
 .primary-header a,
 .primary-footer a {
-  border-bottom: 2px solid #821122;
+  border-bottom: 2px solid #F13535;
   color: #fff;
   text-decoration: none;
 }
