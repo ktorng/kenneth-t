@@ -54,7 +54,7 @@ table {
 */
 
 body {
-  background: #333333;
+  background: black;
   color: #E0E7E9;
   font: 300 16px/22px "Assistant", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
@@ -73,6 +73,21 @@ h2 {
   font-size: 30px;
   line-height: 44px;
   margin: 40px 0 20px;
+}
+
+.cover-bg {
+	-webkit-animation: 	fadein 1s ease-in-out;
+	-moz-animation:		fadein 1s ease-in-out;
+	animation:			fadein 1s ease-in-out;
+	background-position: center;
+	background-size: cover;
+	bottom: 0;
+	left: 0;
+  opacity: 0.15;
+	position: absolute;
+	right: 0;
+	top: 0;
+  z-index: -1;
 }
 
 .hero {
